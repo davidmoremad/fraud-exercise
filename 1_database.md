@@ -16,6 +16,7 @@ Esta fase consta los siguientes pasos:
 ## 1.1 Crear una cuenta y la base de datos
 
 Entramos en [supabase.io](https://supabase.io/) y creamos una cuenta con nuestro correo electrónico.  
+Es totalmente gratuita, no pide datos de pago y es super sencillo.
 Una vez creada la cuenta, en la página principal nos aparecerá un botón para crear un nuevo proyecto
 donde introduciremos los siguientes datos:
  - **Project name**: `fraud`
