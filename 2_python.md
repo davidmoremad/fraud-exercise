@@ -64,6 +64,10 @@ Ahora que ya tenemos los permisos de acceso, vamos a volver a ejecutar el script
 No es muy legible así que vamos a cambiar el código para que nos devuelva los datos en formato más legible. 
 Recuerda cambiar la URL y la KEY en el código. Si lo ejecutamos veremos que el resultado es mucho más legible.
 
+Aunque haya cosas que no entiendas en el código, no te preocupes, lo veremos en el siguiente punto 
+([Crear reglas de detección de Fraude](3_fraud.md)) y explicaremos que hace cada linea. Pero si lo lees con calma
+verás que es bastante sencillo y deducible.
+
 ```python
 import os
 from supabase.client import create_client, Client
@@ -74,7 +78,7 @@ supabase_key = "INSERTA_AQUI_TU_CLAVE"
 supabase: Client = create_client(supabase_url, supabase_key)
 
 def get_users():
-    query = "*, sender_id(*), receiver_id(*)"
+    query = "*"
     return supabase.table("users").select(query).execute().data
 
 def get_transactions():
