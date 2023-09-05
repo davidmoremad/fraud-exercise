@@ -109,3 +109,12 @@ def is_fraud(transaction):
 
     return False
 ```
+
+![fraud_transactions.png](./fraud_transactions.png)
+
+Si lo ejecutamos, podemos ver que solo nos muestra 2 transacciones, que son las que hemos marcado como fraudulentas.
+La 1ª transacción es fraudulenta porque el emisor y el receptor son de distintos paises (España y Armenia).
+La 2ª transacción es fraudulenta porque el email del receptor es un email usado por criminales (proton.me).
+
+Lo puedes corroborar en la imagen que pusimos al principio con los datos de la tabla `users`:
+![users_table_data](./users_table_data.png)
